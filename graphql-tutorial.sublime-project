@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"js_prettier": {
+			"prettier_cli_path": "client/node_modules/.bin/prettier",
+			"additional_cli_args": {
+		        "--config": ".prettierrc",
+		    },
+		    "auto_format_on_save_requires_prettier_config": true,
+			"auto_format_on_save": true,
+		}
+	}
+}

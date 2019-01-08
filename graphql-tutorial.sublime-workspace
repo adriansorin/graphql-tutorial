@@ -1,0 +1,453 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ChannelL",
+				"ChannelsList"
+			],
+			[
+				"get",
+				"getUserId"
+			],
+			[
+				"new",
+				"newLinkSubscribe"
+			],
+			[
+				"user",
+				"userId"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"redis",
+				"redisUrl"
+			],
+			[
+				"sear",
+				"searchChange"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "client/package.json",
+			"settings":
+			{
+				"buffer_size": 794,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/src/App.js",
+			"settings":
+			{
+				"buffer_size": 999,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 211,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/adi/work/graphql-tutorial",
+		"/home/adi/work/graphql-tutorial/client",
+		"/home/adi/work/graphql-tutorial/client/src"
+	],
+	"file_history":
+	[
+		"/home/adi/work/graphql-tutorial/package.json",
+		"/home/adi/work/graphql-tutorial/client/src/App.css",
+		"/home/adi/work/graphql-tutorial/client/src/schema.js",
+		"/home/adi/work/graphql-tutorial/client/src/App.js",
+		"/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
+		"/home/adi/work/robofriends/package.json",
+		"/home/adi/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/home/adi/work/robofriends/src/SearchBox.js",
+		"/home/adi/work/robofriends/src/robots.js",
+		"/home/adi/work/robofriends/src/Card.js",
+		"/home/adi/work/robofriends/src/index.js",
+		"/home/adi/work/robofriends/src/CardList.js",
+		"/home/adi/work/robofriends/package-lock.json",
+		"/home/adi/work/robofriends/README.md",
+		"/home/adi/work/robofriends/src/App.js",
+		"/home/adi/work/robofriends/.prettierrc",
+		"/home/adi/work/robofriends/.eslintrc",
+		"/home/adi/work/hackernews-graphql/README.md",
+		"/home/adi/work/hackernews-graphql/node_modules/graphql-import/dist/definition.js",
+		"/home/adi/work/hackernews-graphsql/src/schema.graphql",
+		"/home/adi/work/hackernews-graphsql/package.json",
+		"/home/adi/work/hackernews-graphsql/src/index.js",
+		"/home/adi/work/hackernews-graphsql/database/prisma.yml",
+		"/home/adi/work/hackernews-graphsql/database/datamodel.prisma",
+		"/home/adi/work/hackernews-graphsql/src/generated/prisma.graphql",
+		"/home/adi/work/robofriends/src/index.css",
+		"/home/adi/.config/sublime-text-3/Packages/Material Theme/schemes/Material-Theme.tmTheme",
+		"/home/adi/work/hackernews-graphsql/.graphqlconfig.yml",
+		"/home/adi/work/talkspace-api/app/doseSpotClinicians/openapi.yml",
+		"/home/adi/work/talkspace-api/app/rooms/openapi.yml",
+		"/home/adi/work/talkspace-api/app/rooms/internal/controllers/room.js",
+		"/home/adi/work/talkspace-api/app/clients/routes/index.js",
+		"/home/adi/work/talkspace-api/app/science/openapi.yml",
+		"/home/adi/work/talkspace-api/app/doseSpotClinicians/routes/index.js",
+		"/home/adi/work/talkspace-api/routes/client/openapi.yml",
+		"/home/adi/work/talkspace-api/app/specs/bundle.yml",
+		"/home/adi/work/talkspace-api/app/configs/openapi.yml",
+		"/home/adi/work/hackernews-graphsql/database/datamodel.graphql",
+		"/home/adi/work/hackernews-graphsql/docker-compose.yml",
+		"/home/adi/work/AdvancedNodeStarter/routes/blogRoutes.js",
+		"/home/adi/work/AdvancedNodeStarter/middlewares/cleanCache.js",
+		"/home/adi/work/AdvancedNodeStarter/services/cache.js",
+		"/home/adi/work/AdvancedNodeStarter/index.js",
+		"/home/adi/work/advanced-nodejs-concepts/index.js",
+		"/home/adi/work/nestjs-demo/src/app.controller.ts",
+		"/home/adi/work/nestjs-demo/src/app.controller.spec.ts",
+		"/home/adi/.config/sublime-text-3/Packages/Emmet/Default (Linux).sublime-keymap",
+		"/home/adi/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/adi/work/poc-face-recognition/src/index.js",
+		"/home/adi/work/poc-face-recognition/src/components/FaceRecognition/FaceRecognition.js",
+		"/home/adi/work/poc-face-recognition/src/components/ImageLinkForm/ImageLinkForm.js",
+		"/home/adi/work/poc-face-recognition/src/components/Logo/Logo.js",
+		"/home/adi/work/poc-face-recognition/src/registerServiceWorker.js",
+		"/home/adi/work/poc-face-recognition/src/components/Navigation/Navigation.js",
+		"/home/adi/work/poc-face-recognition/src/App.js",
+		"/home/adi/work/docker-images/talktala/debian-apache-zend/conf/talkspace-ssl.conf",
+		"/home/adi/work/docker-images/talktala/debian-apache-zend/Dockerfile",
+		"/home/adi/work/docker-images/talktala/debian-apache-zend/conf/supervisord.conf",
+		"/home/adi/work/docker-images/talktala/debian-apache-zend/start/configure-secrets.sh",
+		"/home/adi/work/talkspace-mainsite/docker-compose-php7.yml",
+		"/home/adi/work/talkspace-mainsite/php7-local.sh",
+		"/home/adi/work/talkspace-mainsite/crontab.txt",
+		"/home/adi/work/talkspace-mainsite/Dockerfile-cron",
+		"/home/adi/work/talkspace-mainsite/refactored_Talktala/application/models/InPlatformMatching.php",
+		"/home/adi/work/talkspace-mainsite/refactored_Talktala/application/models/MatchTherapist.php",
+		"/home/adi/work/poc-face-recognition/src/index.css",
+		"/home/adi/work/poc-face-recognition/package.json",
+		"/home/adi/work/poc-face-recognition/src/components/Logo/Logo.css",
+		"/home/adi/work/poc-face-recognition/src/App.css",
+		"/home/adi/work/poc-face-recognition/src/components/ImageLinkForm/ImageLinkForm.css",
+		"/home/adi/work/express-chat/package.json",
+		"/home/adi/work/express-chat/index.js",
+		"/home/adi/work/express-chat/routes/index.js",
+		"/home/adi/work/express-chat/app.js",
+		"/home/adi/work/express-chat/index.html",
+		"/home/adi/work/talkspace-mainsite/env/talkspace-ssl.conf",
+		"/home/adi/work/talkspace-mainsite/env/variables-local.ini",
+		"/home/adi/work/talkspace-mainsite/docker-compose.yml",
+		"/home/adi/work/talkspace-mainsite/apache2-local.sh"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Welcom"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "client/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								644,
+								644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "client/src/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 999,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								713,
+								713
+							]
+						],
+						"settings":
+						{
+							"SL.54.region_keys":
+							[
+								"SL.eslint.Highlights.|7c5e195bc26007f93aae92a7e7a7dc8b291299512a3e1dbcc506b39d0a281228|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.eslint.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
+								"SL.eslint.Highlights.|f78fb2387a5b80e98654ae882734b5ead8837177811fcf1e413c3c8c2d22b11a|region.yellowish markup.warning.sublime_linter|32",
+								"SL.eslint.Highlights.|38f5fb194260dba0f79ad276e94ca5888e0fe00eb58378798b6b44f6f8cc6b58|region.yellowish markup.warning.sublime_linter|32"
+							],
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 250.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 138.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 170.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "graphql-tutorial.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"openapi.yml",
+				"routes/client/openapi.yml"
+			],
+			[
+				"Redis",
+				"refactored_Talktala/library/Talktala/Session/SaveHandler/Redis.php"
+			],
+			[
+				"HttpClient",
+				"refactored_Talktala/library/Zend/Http/Client.php"
+			],
+			[
+				"Bootstr",
+				"refactored_Talktala/application/Bootstrap.php"
+			],
+			[
+				"Socket",
+				"refactored_Talktala/library/Zend/Http/Client/Adapter/Socket.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 228.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
