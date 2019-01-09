@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"A",
+				"ApolloProvider"
+			],
+			[
+				"app",
+				"ApolloProvider"
+			],
+			[
 				"ChannelL",
 				"ChannelsList"
 			],
@@ -39,7 +47,7 @@
 			"file": "client/package.json",
 			"settings":
 			{
-				"buffer_size": 794,
+				"buffer_size": 1022,
 				"line_ending": "Unix"
 			}
 		},
@@ -47,16 +55,26 @@
 			"file": "client/src/App.js",
 			"settings":
 			{
-				"buffer_size": 999,
+				"buffer_size": 1569,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
+			"file": "client/src/schema.js",
 			"settings":
 			{
-				"buffer_size": 211,
+				"buffer_size": 124,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "graphql-tutorial.sublime-project",
+			"settings":
+			{
+				"buffer_size": 314,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -124,11 +142,12 @@
 	],
 	"file_history":
 	[
+		"/home/adi/work/graphql-tutorial/client2/package.json",
+		"/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
 		"/home/adi/work/graphql-tutorial/package.json",
 		"/home/adi/work/graphql-tutorial/client/src/App.css",
 		"/home/adi/work/graphql-tutorial/client/src/schema.js",
 		"/home/adi/work/graphql-tutorial/client/src/App.js",
-		"/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
 		"/home/adi/work/robofriends/package.json",
 		"/home/adi/.config/sublime-text-3/Packages/JsPrettier/JsPrettier.sublime-settings",
 		"/home/adi/work/robofriends/src/SearchBox.js",
@@ -220,6 +239,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ApolloProvider",
 			"Welcom"
 		],
 		"highlight": true,
@@ -238,7 +258,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -247,19 +267,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 794,
+						"buffer_size": 1022,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								644,
-								644
+								687,
+								687
 							]
 						],
 						"settings":
 						{
+							"SL.49.region_keys":
+							[
+							],
 							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -268,7 +291,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -277,53 +300,81 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 999,
+						"buffer_size": 1569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								713,
-								713
+								589,
+								589
 							]
 						],
 						"settings":
 						{
 							"SL.54.region_keys":
 							[
-								"SL.eslint.Highlights.|7c5e195bc26007f93aae92a7e7a7dc8b291299512a3e1dbcc506b39d0a281228|region.yellowish markup.warning.sublime_linter|32",
-								"sublime_linter.protected_regions",
-								"SL.eslint.Gutter.|region.yellowish markup.warning.sublime_linter|dot",
-								"SL.eslint.Highlights.|f78fb2387a5b80e98654ae882734b5ead8837177811fcf1e413c3c8c2d22b11a|region.yellowish markup.warning.sublime_linter|32",
-								"SL.eslint.Highlights.|38f5fb194260dba0f79ad276e94ca5888e0fe00eb58378798b6b44f6f8cc6b58|region.yellowish markup.warning.sublime_linter|32"
+								"sublime_linter.protected_regions"
 							],
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 250.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/home/adi/.config/sublime-text-3/Packages/User/JsPrettier.sublime-settings",
+					"file": "client/src/schema.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 211,
+						"buffer_size": 124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								122,
+								122
+							]
+						],
+						"settings":
+						{
+							"SL.57.region_keys":
+							[
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "graphql-tutorial.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
 							]
 						],
 						"settings":
@@ -334,7 +385,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
