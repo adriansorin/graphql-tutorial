@@ -10,6 +10,12 @@ const server = express();
 
 server.use('*', cors({ origin: 'http://localhost:3000' }));
 
+server.use(async (req, res, next) => {
+  await new Promise(resolve => setTimeout(resolve, 500));
+
+  next();
+});
+
 server.use(
   '/graphql',
   bodyParser.json(),
