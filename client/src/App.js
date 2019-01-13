@@ -1,55 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
-import logo from './logo.svg';
 import './App.css';
-import ApolloClient from 'apollo-boost';
-import gql from 'graphql-tag';
-import { ApolloProvider, Query } from 'react-apollo';
+import { ApolloClient } from 'apollo-client';
+import { ApolloProvider } from 'react-apollo';
 import { InMemoryCache } from 'apollo-cache-inmemory';
+import ChannelsList from './components/ChannelsList';
+import { HttpLink } from 'apollo-link-http';
 
-const client = new ApolloClient({
-  uri: 'http://localhost:4001/graphql',
-  cache: new InMemoryCache(window.__APOLLO_STATE__)
+const httpLink = new HttpLink({
+  uri: 'http://localhost:4001/graphql'
 });
 
-const ChannelsList = () => (
-  <Query
-    query={gql`
-      {
-        channels {
-          id
-          name
-        }
-      }
-    `}
-  >
-    {({ loading, error, data }) => {
-      if (loading) {
-        return <p>Loading...</p>;
-      }
-
-      if (error) {
-        return <p>{error.message}</p>;
-      }
-
-      return (
-        <ul class="Item-list">
-          {data.channels.map(ch => (
-            <li key={ch.id}>{ch.name}</li>
-          ))}
-        </ul>
-      );
-    }}
-  </Query>
-);
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(window.__APOLLO_STATE__)
+});
 
 const App = () => (
   <ApolloProvider client={client}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Welcome to Apollo</h2>
-      </header>
+      <div className="navbar">React + Apollo</div>
       <ChannelsList />
     </div>
   </ApolloProvider>

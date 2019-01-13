@@ -367,6 +367,12 @@
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+								"SL.eslint.Highlights.|a29dab84f978c788fc5bbe64657bf180a67094048d4810f15233f77a0e086662|region.yellowish markup.warning.sublime_linter|32",
+								"sublime_linter.protected_regions",
+								"SL.eslint.Gutter.|region.yellowish markup.warning.sublime_linter|dot"
+							],
 							"SL.32.region_keys":
 							[
 								"SL.eslint.Highlights.|a29dab84f978c788fc5bbe64657bf180a67094048d4810f15233f77a0e086662|region.yellowish markup.warning.sublime_linter|32",
