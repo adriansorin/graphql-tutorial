@@ -1,34 +1,31 @@
 const express = require('express');
-const { graphqlExpress, graphiqlExpress } = require('graphql-server-express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
+const http = require('http');
+const { ApolloServer } = require('apollo-server-express');
 const { schema } = require('./src/schema');
 
 const PORT = 4001;
 
-const server = express();
+const server = new ApolloServer({
+  schema
+});
 
-server.use('*', cors({ origin: 'http://localhost:3000' }));
+const app = express();
 
-server.use(async (req, res, next) => {
-  await new Promise(resolve => setTimeout(resolve, 500));
+app.use('*', cors({ origin: 'http://localhost:3000' }));
+
+app.use(async (req, res, next) => {
+  await new Promise(resolve => setTimeout(resolve, 0));
 
   next();
 });
 
-server.use(
-  '/graphql',
-  bodyParser.json(),
-  graphqlExpress({
-    schema
-  })
-);
+server.applyMiddleware({ app });
 
-server.use(
-  '/graphiql',
-  graphiqlExpress({
-    endpointURL: '/graphql'
-  })
-);
+const httpServer = http.createServer(app);
+server.installSubscriptionHandlers(httpServer);
 
-server.listen(PORT, () => console.log(`GraphQL Server is now running on http://localhost:${PORT}`));
+httpServer.listen(PORT, () => {
+  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`);
+  console.log(`🚀 Subscriptions ready at ws://localhost:${PORT}${server.subscriptionsPath}`);
+});
