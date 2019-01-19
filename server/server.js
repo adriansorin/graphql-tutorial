@@ -3,16 +3,18 @@ const cors = require('cors');
 const http = require('http');
 const { ApolloServer } = require('apollo-server-express');
 const { schema } = require('./src/schema');
+const db = require('./src/models');
 
 const PORT = 4001;
 
 const server = new ApolloServer({
-  schema
+  schema,
+  context: { db }
 });
 
 const app = express();
 
-app.use('*', cors({ origin: 'http://localhost:3000' }));
+app.use('*', cors());
 
 app.use(async (req, res, next) => {
   await new Promise(resolve => setTimeout(resolve, 0));

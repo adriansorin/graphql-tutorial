@@ -18,12 +18,15 @@
     "babel-eslint": "^10.0.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
+    "dataloader-sequelize": "^1.7.7",
     "express": "^4.16.4",
     "graphql": "^14.0.2",
     "graphql-extensions": "^0.4.1",
+    "graphql-sequelize": "^9.3.3",
     "graphql-server-express": "^1.4.0",
     "graphql-subscriptions": "^1.0.0",
     "graphql-tools": "^4.0.3",
+    "sequelize": "^4.42.0",
     "subscriptions-transport-ws": "^0.9.15"
   }
 }

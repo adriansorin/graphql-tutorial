@@ -4,29 +4,29 @@ const pubsub = new PubSub();
 
 const channels = [
   {
-    id: '1',
+    id: 1,
     name: 'soccer',
     messages: [
       {
-        id: '1',
+        id: 1,
         text: 'soccer is football'
       },
       {
-        id: '2',
+        id: 2,
         text: 'hello soccer world cup'
       }
     ]
   },
   {
-    id: '2',
+    id: 2,
     name: 'baseball',
     messages: [
       {
-        id: '3',
+        id: 3,
         text: 'baseball is life'
       },
       {
-        id: '4',
+        id: 4,
         text: 'hello baseball world series'
       }
     ]
@@ -43,12 +43,14 @@ module.exports = {
   Mutation: {
     addChannel: (root, args) => {
       nextId += 1;
-      const newChannel = { id: nextId, name: args.name };
+      const newChannel = { id: nextId, name: args.name, messages: [] };
       channels.push(newChannel);
       return newChannel;
     },
     addMessage: (root, { message }) => {
-      const currentChannel = channels.find(channel => channel.id === message.channelId);
+      const currentChannel = channels.find(
+        channel => Number(channel.id) === Number(message.channelId)
+      );
       if (!currentChannel) throw new Error('Channel does not exist');
 
       const newMessage = { id: String((nextMessageId += 1)), text: message.text };

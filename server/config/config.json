@@ -1,0 +1,8 @@
+{
+  "username": "root",
+  "password": "my-secret-pw",
+  "database": "graphql-demo",
+  "host": "localhost",
+  "dialect": "mysql",
+  "port": 33060
+}
