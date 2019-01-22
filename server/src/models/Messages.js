@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Message = sequelize.define(
-    'message',
+  const Messages = sequelize.define(
+    'Messages',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -17,13 +17,13 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     {
-      freezeTableName: true
+      tableName: 'message'
     }
   );
 
-  Message.associate = models => {
-    Message.belongsTo(models.Channel, { foreignKey: 'channel_id', targetKey: 'id' });
+  Messages.associate = models => {
+    Messages.belongsTo(models.Channels, { foreignKey: 'channel_id', targetKey: 'id' });
   };
 
-  return Message;
+  return Messages;
 };

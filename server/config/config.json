@@ -4,5 +4,5 @@
   "database": "graphql-demo",
   "host": "localhost",
   "dialect": "mysql",
-  "port": 33060
+  "port": 3306
 }

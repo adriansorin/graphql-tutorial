@@ -6,16 +6,18 @@ const config = require(`__dirname/../../config/config.json`);
 const basename = path.basename(module.filename);
 const db = {};
 
-const sequelize = new Sequelize(config.database, config.user, config.password, {
+const sequelize = new Sequelize(config.database, config.username, config.password, {
   host: config.host,
   dialect: config.dialect,
-  port: config.port
+  port: config.port,
+  define: {
+    timestamps: false
+  }
 });
 
 fs.readdirSync(__dirname)
   .filter(file => file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js')
   .forEach(file => {
-    if (file === 'mcrypt.js') return;
     const model = sequelize.import(path.join(__dirname, file));
     db[model.name] = model;
   });

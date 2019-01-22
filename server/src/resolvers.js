@@ -1,4 +1,5 @@
 const { PubSub, withFilter } = require('apollo-server');
+const { Channels, Messages } = require('./models');
 
 const pubsub = new PubSub();
 
@@ -37,8 +38,8 @@ let nextMessageId = 5;
 
 module.exports = {
   Query: {
-    channels: () => channels,
-    channel: (root, { id }) => channels.find(channel => Number(channel.id) === Number(id))
+    channels: () => Channels.findAll({ include: [{ model: Messages }] }),
+    channel: (root, { id }) => Channels.findById(id)
   },
   Mutation: {
     addChannel: (root, args) => {

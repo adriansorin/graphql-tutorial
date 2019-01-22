@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
-  const Channel = sequelize.define(
-    'channel',
+  const Channels = sequelize.define(
+    'Channels',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -10,13 +10,13 @@ module.exports = (sequelize, DataTypes) => {
       name: DataTypes.STRING
     },
     {
-      freezeTableName: true
+      tableName: 'channel'
     }
   );
 
-  Channel.associate = models => {
-    Channel.hasMany(models.Message, { foreignKey: 'channel_id', sourceKey: 'id' });
+  Channels.associate = models => {
+    Channels.hasMany(models.Messages, { foreignKey: 'channel_id', sourceKey: 'id' });
   };
 
-  return Channel;
+  return Channels;
 };
