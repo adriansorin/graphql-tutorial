@@ -38,8 +38,8 @@ let nextMessageId = 5;
 
 module.exports = {
   Query: {
-    channels: () => Channels.findAll({ include: [{ model: Messages }] }),
-    channel: (root, { id }) => Channels.findById(id)
+    channels: () => Channels.findAll(),
+    channel: (root, { id }) => Channels.findById(id, { include: [{ model: Messages }] })
   },
   Mutation: {
     addChannel: (root, args) => {
