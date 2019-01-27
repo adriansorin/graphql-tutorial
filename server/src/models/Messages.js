@@ -22,7 +22,11 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   Messages.associate = models => {
-    Messages.belongsTo(models.Channels, { foreignKey: 'channel_id', targetKey: 'id' });
+    Messages.belongsTo(models.Channels, {
+      as: 'Channel',
+      foreignKey: 'channel_id',
+      targetKey: 'id'
+    });
   };
 
   return Messages;

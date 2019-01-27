@@ -1,3 +1,5 @@
+const Messages = require('./Messages');
+
 module.exports = (sequelize, DataTypes) => {
   const Channels = sequelize.define(
     'Channels',
@@ -15,7 +17,11 @@ module.exports = (sequelize, DataTypes) => {
   );
 
   Channels.associate = models => {
-    Channels.hasMany(models.Messages, { foreignKey: 'channel_id', sourceKey: 'id' });
+    Channels.hasMany(models.Messages, {
+      as: 'Messages',
+      foreignKey: 'channel_id',
+      sourceKey: 'id'
+    });
   };
 
   return Channels;

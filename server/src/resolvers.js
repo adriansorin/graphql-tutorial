@@ -1,5 +1,4 @@
 const { PubSub, withFilter } = require('apollo-server');
-const { Channels, Messages } = require('./models');
 
 const pubsub = new PubSub();
 
@@ -37,25 +36,34 @@ let nextId = 3;
 let nextMessageId = 5;
 
 module.exports = {
+  Channel: {
+    messages: (parent, args, { db }) =>
+      db.Messages.findAll({
+        where: {
+          channelID: parent.id
+        }
+      })
+  },
   Query: {
-    channels: () => Channels.findAll(),
-    channel: (root, { id }) => Channels.findById(id, { include: [{ model: Messages }] })
+    channels: (parent, args, { db }) => db.Channels.findAll(),
+    channel: async (parent, { id }, { db }) =>
+      db.Channels.findOne({
+        where: { id }
+      })
   },
   Mutation: {
-    addChannel: (root, args) => {
-      nextId += 1;
-      const newChannel = { id: nextId, name: args.name, messages: [] };
-      channels.push(newChannel);
-      return newChannel;
-    },
-    addMessage: (root, { message }) => {
-      const currentChannel = channels.find(
-        channel => Number(channel.id) === Number(message.channelId)
-      );
+    addChannel: (parent, { name }, { db }) =>
+      db.Channels.create({
+        name
+      }),
+    addMessage: async (root, { message }, { db }) => {
+      const currentChannel = await db.Channels.findByPk(message.channelId);
       if (!currentChannel) throw new Error('Channel does not exist');
 
-      const newMessage = { id: String((nextMessageId += 1)), text: message.text };
-      currentChannel.messages.push(newMessage);
+      const newMessage = await db.Messages.create({
+        text: message.text,
+        channelID: currentChannel.id
+      });
 
       pubsub.publish('messageAdded', { messageAdded: newMessage, channelId: message.channelId });
       return newMessage;

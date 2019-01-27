@@ -12,7 +12,8 @@ const sequelize = new Sequelize(config.database, config.username, config.passwor
   port: config.port,
   define: {
     timestamps: false
-  }
+  },
+  logging: console.log
 });
 
 fs.readdirSync(__dirname)

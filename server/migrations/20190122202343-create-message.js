@@ -12,7 +12,11 @@ module.exports = {
       },
       channelID: {
         type: Sequelize.DataTypes.INTEGER,
-        field: 'channel_id'
+        field: 'channel_id',
+        references: {
+          key: 'id',
+          model: 'channel'
+        }
       }
     }),
 

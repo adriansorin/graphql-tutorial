@@ -6,7 +6,6 @@ const { schema } = require('./src/schema');
 const db = require('./src/models');
 
 const PORT = 4001;
-
 const server = new ApolloServer({
   schema,
   context: { db }
