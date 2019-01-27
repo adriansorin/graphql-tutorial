@@ -2,39 +2,6 @@ const { PubSub, withFilter } = require('apollo-server');
 
 const pubsub = new PubSub();
 
-const channels = [
-  {
-    id: 1,
-    name: 'soccer',
-    messages: [
-      {
-        id: 1,
-        text: 'soccer is football'
-      },
-      {
-        id: 2,
-        text: 'hello soccer world cup'
-      }
-    ]
-  },
-  {
-    id: 2,
-    name: 'baseball',
-    messages: [
-      {
-        id: 3,
-        text: 'baseball is life'
-      },
-      {
-        id: 4,
-        text: 'hello baseball world series'
-      }
-    ]
-  }
-];
-let nextId = 3;
-let nextMessageId = 5;
-
 module.exports = {
   Channel: {
     messages: (parent, args, { db }) =>
